@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeskNest | Products</title>
+    <title>Products | DeskNest</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <!-- Student Name: Md Nahidul Islam | Student ID: 2310667 -->
 
     <header>
@@ -22,13 +21,90 @@
     </header>
 
     <main>
-        <h2>Our Products</h2>
-        <p>Explore our workspace accessories.</p>
+        <section class="products-intro">
+            <h2>Explore Our Products</h2>
+
+            <p>
+                Discover practical and stylish accessories designed
+                to improve your everyday workspace.
+            </p>
+
+            <p>
+                From desk organization to comfortable working,
+                find the essentials that make your desk more useful.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800"
+                alt="Organized modern office workspace"
+            >
+        </section>
+
+        <section class="products-section">
+            <h2>Our Workspace Collection</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+                        alt="Laptop on a modern desk"
+                    >
+                    <h3>Minimal Desk Setup</h3>
+                    <p>A clean and practical setup for everyday productivity.</p>
+                    <p class="price">$49.00</p>
+                    <button onclick="addToCart('Minimal Desk Setup')">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=600"
+                        alt="Notebook and stationery"
+                    >
+                    <h3>Daily Planner</h3>
+                    <p>Keep your tasks and daily plans organized.</p>
+                    <p class="price">$18.00</p>
+                    <button onclick="addToCart('Daily Planner')">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600"
+                        alt="Computer mouse on a desk"
+                    >
+                    <h3>Wireless Mouse</h3>
+                    <p>Enjoy convenient navigation and a comfortable workflow.</p>
+                    <p class="price">$25.00</p>
+                    <button onclick="addToCart('Wireless Mouse')">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600"
+                        alt="Decorative workspace accessories"
+                    >
+                    <h3>Desk Organizer</h3>
+                    <p>Keep your essential workspace items neatly arranged.</p>
+                    <p class="price">$22.00</p>
+                    <button onclick="addToCart('Desk Organizer')">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 DeskNest. All rights reserved.</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

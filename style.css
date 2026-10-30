@@ -1,15 +1,74 @@
 
-/* Homepage Flexbox Layout */
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9f5;
+    color: #26352c;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #315c45;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #26352c;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #6b9b75;
+}
+
+/* HOMEPAGE HERO SECTION */
 
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 50px;
+    padding: 80px 8%;
 }
 
 .hero-content {
     flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #315c45;
+}
+
+.hero-content p {
+    margin-bottom: 15px;
+    color: #5c685f;
 }
 
 .hero-image {
@@ -18,11 +77,96 @@
 
 .hero-image img {
     width: 100%;
-    height: auto;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* BUTTON */
+
+button {
+    background-color: #315c45;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #203e2e;
+}
+
+/* WHY CHOOSE SECTION */
+
+.why-choose {
+    text-align: center;
+    padding: 60px 8%;
+    background-color: #eaf0e8;
+}
+
+.why-choose h2 {
+    color: #315c45;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.why-choose p {
+    max-width: 750px;
+    margin: 0 auto 15px;
+    color: #5c685f;
 }
 
 .why-choose img {
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    max-width: 650px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #263f32;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 45px 6%;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        height: 260px;
+    }
+
+    .why-choose {
+        padding: 40px 6%;
+    }
 }

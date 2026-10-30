@@ -280,3 +280,107 @@ footer {
         height: 200px;
     }
 }
+
+/* CONTACT PAGE INTRODUCTION */
+
+.contact-intro {
+    text-align: center;
+    padding: 60px 8%;
+    background-color: #eaf0e8;
+}
+
+.contact-intro h2 {
+    color: #315c45;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-intro p {
+    max-width: 750px;
+    margin: 0 auto 15px;
+    color: #5c685f;
+}
+
+.contact-intro img {
+    width: 100%;
+    max-width: 700px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* CONTACT FORM SECTION */
+
+.contact-section {
+    display: flex;
+    gap: 40px;
+    padding: 60px 8%;
+    align-items: flex-start;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #315c45;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #5c685f;
+    margin-bottom: 20px;
+}
+
+.contact-info img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #26352c;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5cc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* CONTACT PAGE RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 40px 6%;
+    }
+
+    .contact-intro h2 {
+        font-size: 28px;
+    }
+
+    .contact-info img,
+    .contact-intro img {
+        height: 220px;
+    }
+}

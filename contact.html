@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeskNest | Contact</title>
+    <title>Contact | DeskNest</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <!-- Student Name: Md Nahidul Islam | Student ID: 2310667 -->
 
     <header>
@@ -22,13 +21,82 @@
     </header>
 
     <main>
-        <h2>Contact Us</h2>
-        <p>We are here to help you.</p>
+        <section class="contact-intro">
+            <h2>Get in Touch</h2>
+
+            <p>
+                Have questions about our workspace products?
+                We would love to hear from you.
+            </p>
+
+            <p>
+                Contact our team for product information,
+                assistance, or general enquiries. We are happy to help.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800"
+                alt="Modern office workspace"
+            >
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Contact Our Team</h2>
+
+                <p>
+                    Whether you need help choosing a product
+                    or have a question about your order,
+                    you can send us a message using the form.
+                </p>
+
+                <img
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800"
+                    alt="Comfortable and organized office"
+                >
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+
+                <form>
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message"
+                        required
+                    ></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 DeskNest. All rights reserved.</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
